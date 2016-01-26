@@ -12,9 +12,11 @@ requirejs.config({
   paths: {
     jquery: 'node_modules/jquery/dist/jquery',
     underscore: 'node_modules/underscore/underscore',
+    backbone: 'node_modules/backbone/backbone',    
     userLibrary: 'src/userLibrary',
-    userLibraryModel: 'src/model/userLibrary',
-    userLibraryView: 'src/view/userLibrary'    
+    userLibraryView: 'src/view/userLibrary',
+    UserLibraryModel: 'src/model/userLibrary',
+    UserLibraryCollection: 'src/collection/userLibrary'    
   },
   shim: {
   },

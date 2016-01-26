@@ -2,9 +2,11 @@ requirejs.config({
   paths: {
     jquery: '../node_modules/jquery/dist/jquery',
     underscore: '../node_modules/underscore/underscore-min',
+    backbone: '../node_modules/backbone/backbone',    
     userLibrary: 'userLibrary',
-    userLibraryModel: 'model/userLibrary',
-    userLibraryView: 'view/userLibrary'
+    userLibraryView: 'view/userLibrary',
+    UserLibraryModel: 'model/userLibrary',
+    UserLibraryCollection: 'collection/userLibrary'
   }
 });
 requirejs(['userLibrary']);
