@@ -14,7 +14,7 @@ requirejs.config({
     underscore: 'node_modules/underscore/underscore',
     backbone: 'node_modules/backbone/backbone',    
     userLibrary: 'src/userLibrary',
-    userLibraryView: 'src/view/userLibrary',
+    UserLibraryView: 'src/view/userLibrary',
     UserLibraryModel: 'src/model/userLibrary',
     UserLibraryCollection: 'src/collection/userLibrary'    
   },

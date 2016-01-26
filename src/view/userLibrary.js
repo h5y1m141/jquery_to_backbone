@@ -20,11 +20,12 @@ define([
         success : $.proxy(this.add, this)
       });
     },
-    add: function(collection, resp) {
+    add: function(collection, response) {
       var result = [],
           $dataArea = $('.dataArea'),
           template = $('#userLibraryView').html(),
           compiled = _.template(template);
+      console.log('add start');
       return $dataArea.append(compiled({
         items: collection.map(function(model){
           return model.attributes;
