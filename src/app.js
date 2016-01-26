@@ -2,7 +2,8 @@ requirejs.config({
   paths: {
     'jquery': '../node_modules/jquery/dist/jquery',
     'underscore': '../node_modules/underscore/underscore-min',
-    'userLibrary': 'userLibrary'
+    'userLibrary': 'userLibrary',
+    'userLibraryModel': 'model/userLibrary'
   },
   shim: {
     'userLibrary': {
