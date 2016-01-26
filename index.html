@@ -6,5 +6,13 @@
     <h3>JSON読み込みサンプル</h3>
     <button id='userLibrary'>読み込み開始</button>
     <div class='dataArea'></div>
+    <ul>
+      <script type="text/template" id="userLibraryView">
+        <% _.each(items, function(item){ %>
+        <li>ファイル名：<%= item.path %></li>
+        <li>説明：<%= item.description %></li>
+        <% }); %>
+      </script>
+    </ul>
   </body>
 </html>
