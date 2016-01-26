@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "this is a sample app to explain how we refactor jQuery-based application",
   "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start ./karma.conf.js"
+  },
   "author": "Hiroshi Oyamada",
   "license": "MIT",
   "dependencies": {
