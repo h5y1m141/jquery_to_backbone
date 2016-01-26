@@ -11,9 +11,10 @@ requirejs.config({
   baseUrl: "/base",
   paths: {
     jquery: 'node_modules/jquery/dist/jquery',
-    underscore: 'node_modules/underscore/underscore-min',
+    underscore: 'node_modules/underscore/underscore',
     userLibrary: 'src/userLibrary',
-    userLibraryModel: 'src/model/userLibrary'
+    userLibraryModel: 'src/model/userLibrary',
+    userLibraryView: 'src/view/userLibrary'    
   },
   shim: {
   },
