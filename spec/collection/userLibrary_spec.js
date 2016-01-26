@@ -1,8 +1,10 @@
-define(['userLibraryModel'], function(userLibraryModel) {
-  describe('model/userLibrary', function() {
+define(['UserLibraryCollection'], function(UserLibraryCollection) {
+  describe('collection/userLibrary', function() {
     describe('fetchメソッドについて', function() {
+      var userLibraryCollection;
       beforeEach(function () {
-        spyOn(userLibraryModel, 'fetch').and.callFake(function(){
+        userLibraryCollection = new UserLibraryCollection();
+        spyOn(userLibraryCollection, 'fetch').and.callFake(function(){
           var deferred = $.Deferred();
           var dummy = [
             {
@@ -18,10 +20,13 @@ define(['userLibraryModel'], function(userLibraryModel) {
           return deferred.promise();
         });
       });
+      it('fetchメソッドが定義されてる', function(){
+        expect(userLibraryCollection.fetch).toBeDefined();
+      });
       it('JSONの値が取得できる', function() {
         var items,
             promise;
-        promise = userLibraryModel.fetch();
+        promise = userLibraryCollection.fetch();
         promise.done(function(data){
           items = JSON.parse(data);
         });
