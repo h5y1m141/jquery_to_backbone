@@ -1,11 +1,8 @@
 {
-  "name": "jquery to backbone",
+  "name": "jquery_to_backbone",
   "version": "1.0.0",
   "description": "this is a sample app to explain how we refactor jQuery-based application",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Hiroshi Oyamada",
   "license": "MIT",
   "dependencies": {
