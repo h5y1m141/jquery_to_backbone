@@ -8,6 +8,7 @@ requirejs.config({
     UserLibraryView: 'view/userLibrary',
     UserLibraryModel: 'model/userLibrary',
     UserLibraryCollection: 'collection/userLibrary',
+    UserLibraryItemView: 'item_view/userLibrary',
     UserLibraryCollectionView: 'collection_view/userLibrary'
   }
 });
