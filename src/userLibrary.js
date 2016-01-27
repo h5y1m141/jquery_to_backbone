@@ -1,5 +1,5 @@
 requirejs([
-  'UserLibraryView'
-], function(UserLibraryView) {
-  var userLibraryView = new UserLibraryView();
+  'UserLibraryCollectionView'
+], function(UserLibraryCollectionView) {
+  var view = new UserLibraryCollectionView();
 });
