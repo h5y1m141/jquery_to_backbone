@@ -5,7 +5,8 @@ define([
 ], function(Backbone, Marionette, UserLibraryModel) {
   var UserLibraryItemView = Marionette.ItemView.extend({
     model: UserLibraryModel,
-    template: '#userLibrariyTemplate'
+    template: '#itemTemplate',
+    tagName: 'li'
   });
   return UserLibraryItemView;
 });

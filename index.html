@@ -6,10 +6,18 @@
     <h3>JSON読み込みサンプル</h3>
     <div class='dataArea'>
       <button id='userLibrary'>読み込み開始</button>
-      <ul id='dataArea'></ul>
-      <script type="text/template" id="userLibrariyTemplate">
-        <li>ファイル名：<%= path %></li>
-        <li>説明：<%= description %></li>
+      <script type='text/template' id='itemTemplate'>
+        ファイル名：<%= path %>説明：<%= description %>
+      </script>
+    </div>
+    <script id="list-layout" type="text/html">
+      <div class='collection'>
+        <ul></ul>
+      </div>
+    </script>
+    <div class='itemArea'>
+      <script type='text/template' id='itemAreaTemplate'>
+        アイテム名：<%= name %>
       </script>
     </div>
   </body>

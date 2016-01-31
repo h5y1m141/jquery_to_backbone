@@ -7,7 +7,7 @@ define([
   var UserLibraryCollectionView;
   UserLibraryCollectionView = Marionette.CollectionView.extend({
     el: '.dataArea',
-    tagName: 'ul',
+    tagName: 'ul',    
     childView: UserLibraryItemView,
     collection: UserLibraryCollection,
     events: {
@@ -16,14 +16,16 @@ define([
     initialize: function(options) {
       this.collection = new UserLibraryCollection();
       this.listenTo(this.collection, 'change', this.fetch);
-    },    
+    },
     fetch: function() {
-      console.log(this);
       this.collection.fetch({
         dataType : 'json',
         success : $.proxy(this.render, this)
       });
-    }    
+    },
+    childViewOptions: function(model, index) {
+      console.log(model);
+    }
   });
   return UserLibraryCollectionView;
 });
