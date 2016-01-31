@@ -4,15 +4,21 @@
   </head>
   <body>
     <h3>JSON読み込みサンプル</h3>
-    <button id='userLibrary'>読み込み開始</button>
-    <div class='dataArea'></div>
-    <ul>
-      <script type="text/template" id="userLibraryView">
-        <% _.each(items, function(item){ %>
-        <li>ファイル名：<%= item.path %></li>
-        <li>説明：<%= item.description %></li>
-        <% }); %>
+    <div class='dataArea'>
+      <button id='userLibrary'>読み込み開始</button>
+      <script type='text/template' id='itemTemplate'>
+        ファイル名：<%= path %>説明：<%= description %>
       </script>
-    </ul>
+    </div>
+    <script id="list-layout" type="text/html">
+      <div class='collection'>
+        <ul></ul>
+      </div>
+    </script>
+    <div class='itemArea'>
+      <script type='text/template' id='itemAreaTemplate'>
+        アイテム名：<%= name %>
+      </script>
+    </div>
   </body>
 </html>

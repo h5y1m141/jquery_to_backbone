@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "backbone": "^1.2.3",
+    "backbone.marionette": "^2.4.4",
     "eslint": "^1.10.3",
     "gulp": "^3.9.0",
     "gulp-webserver": "*",
