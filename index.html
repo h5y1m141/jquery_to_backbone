@@ -3,22 +3,26 @@
     <script data-main='src/app' src='lib/require.js'></script>
   </head>
   <body>
+
     <h3>JSON読み込みサンプル</h3>
-    <div class='dataArea'>
+    <section id="main">
       <button id='userLibrary'>読み込み開始</button>
-      <script type='text/template' id='itemTemplate'>
-        ファイル名：<%= path %>説明：<%= description %>
-      </script>
-    </div>
-    <script id="list-layout" type="text/html">
-      <div class='collection'>
-        <ul></ul>
-      </div>
+    </section>
+
+
+    <script type='text/template' id='table-template'>
+      <h3>テーブル情報</h3>
+      <table>
+        <tbody class="contents">
+        </tbody>
+      </table>
     </script>
-    <div class='itemArea'>
-      <script type='text/template' id='itemAreaTemplate'>
-        アイテム名：<%= name %>
-      </script>
-    </div>
+
+    <script type='text/template' id='row-template'>
+      ファイル名：<%= path %>
+      説明：<%= description %>
+    </script>
+
+
   </body>
 </html>

@@ -1,8 +1,8 @@
 requirejs([
   'UserLibraryCollectionView',
-  'collection_view/item'
-], function(UserLibraryCollectionView, ItemCollectionView) {
-  new UserLibraryCollectionView();
-  var view = new ItemCollectionView();
-  view.render();
+  'collection_view/item',
+  'composite_views/userLibrary'
+], function(UserLibraryCollectionView, ItemCollectionView, UserLibraryCompositeViews) {
+  // new UserLibraryCollectionView();
+  new UserLibraryCompositeViews();
 });
