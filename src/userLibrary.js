@@ -4,5 +4,5 @@ requirejs([
 ], function(UserLibraryCollectionView, ItemCollectionView) {
   new UserLibraryCollectionView();
   var view = new ItemCollectionView();
-  view.render();
+  view.fetch();
 });
