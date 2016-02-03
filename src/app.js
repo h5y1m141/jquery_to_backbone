@@ -7,9 +7,13 @@ requirejs.config({
     userLibrary: 'userLibrary',
     UserLibraryView: 'view/userLibrary',
     UserLibraryModel: 'model/userLibrary',
+    UserLibraryCompositeView: 'composite_views/userLibrary',    
     UserLibraryCollection: 'collection/userLibrary',
-    UserLibraryItemView: 'item_view/userLibrary',
-    UserLibraryCollectionView: 'collection_view/userLibrary'
+    UserLibraryCollectionView: 'collection_views/userLibrary',
+    ItemCollectionView: 'collection_views/item',
+    TabCollectionView: 'collection_views/tabCollectionView',
+    UserLibraryItemView: 'item_views/userLibrary',
+    TabItemView: 'item_views/tabItemView'
   }
 });
 requirejs(['userLibrary']);

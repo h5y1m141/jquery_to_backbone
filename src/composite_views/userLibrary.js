@@ -3,7 +3,7 @@ define([
   'marionette',
   'UserLibraryCollection',
   'UserLibraryItemView',
-  'item_view/rowView'
+  'item_views/rowView'
 ], function(Backbone, Marionette, UserLibraryCollection, UserLibraryItemView, RowView) {
   var UserLibraryCompositeView;
   UserLibraryCompositeView = Marionette.CompositeView.extend({
