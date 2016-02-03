@@ -1,11 +1,12 @@
 <html>
   <head>
+    <link rel='stylesheet' href='./css/style.css' type='text/css'>
     <script data-main='src/app' src='lib/require.js'></script>
   </head>
   <body>
 
     <h3>JSON読み込みサンプル</h3>
-    <section id="main">
+    <section id='main'>
       <button id='userLibrary'>読み込み開始</button>
     </section>
 
@@ -13,7 +14,7 @@
     <script type='text/template' id='table-template'>
       <h3>テーブル情報</h3>
       <table>
-        <tbody class="contents">
+        <tbody class='contents'>
         </tbody>
       </table>
     </script>
@@ -22,7 +23,16 @@
       ファイル名：<%= path %>
       説明：<%= description %>
     </script>
-
+    <hr/>
+    <h3>UI要素のクリックイベントサンプル</h3>
+    <ul class='tabs'>
+      <li>
+        <a href='#mypage'>マイページ</a>
+      </li>
+      <li>
+        <a href='#account'>アカウント編集</a>
+      </li>        
+    </ul>
 
   </body>
 </html>

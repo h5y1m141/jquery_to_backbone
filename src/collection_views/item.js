@@ -1,7 +1,7 @@
 define([
   'backbone',
   'marionette',
-  'item_view/item'
+  'item_views/item'
 ], function(Backbone, Marionette, ItemView) {
   var ItemCollectionView;
   ItemCollectionView = Marionette.CompositeView.extend({
