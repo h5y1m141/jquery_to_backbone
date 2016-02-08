@@ -16,4 +16,4 @@ requirejs.config({
     TabItemView: 'item_views/tabItemView'
   }
 });
-requirejs(['userLibrary']);
+requirejs(['userLibrary', 'main']);
