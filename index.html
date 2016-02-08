@@ -4,6 +4,12 @@
     <script data-main='src/app' src='lib/require.js'></script>
   </head>
   <body>
+    <h3>メイン領域</h3>
+    <script type='text/template' id='main-view-template'>
+      <h4>詳細情報</h4>
+      <div id="main-header"></div>
+      <div id="main-contents">コンテンツ表示</div>
+    </script>
 
     <h3>JSON読み込みサンプル</h3>
     <section id='main'>
@@ -30,8 +36,7 @@
         <a href="<%- href %>">
           <%- tabName %>
         </a>
-      </script>        
+      </script>
     </ul>
-
   </body>
 </html>

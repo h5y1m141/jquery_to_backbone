@@ -13,7 +13,10 @@ requirejs.config({
     ItemCollectionView: 'collection_views/item',
     TabCollectionView: 'collection_views/tabCollectionView',
     UserLibraryItemView: 'item_views/userLibrary',
-    TabItemView: 'item_views/tabItemView'
+    TabItemView: 'item_views/tabItemView',
+    MainHeaderItemView: 'item_views/mainHeaderItemView',
+    HeaderView: 'item_views/headerView',
+    MainLayoutView: 'layout_views/mainLayoutView'
   }
 });
 requirejs(['userLibrary', 'main']);
