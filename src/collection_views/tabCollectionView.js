@@ -11,8 +11,7 @@ define([
       'click a': 'activateHandler'
     },
     initialize: function(options) {
-      var tabCollection,
-          tabs = [
+      var tabs = [
             { href: 'mypage',  tabName: 'マイページ' },
             { href: 'account', tabName: 'アカウント編集' }
           ];
