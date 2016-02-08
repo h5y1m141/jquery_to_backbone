@@ -25,13 +25,12 @@
     </script>
     <hr/>
     <h3>UI要素のクリックイベントサンプル</h3>
-    <ul class='tabs'>
-      <li>
-        <a href='#mypage'>マイページ</a>
-      </li>
-      <li>
-        <a href='#account'>アカウント編集</a>
-      </li>        
+    <ul id='tabs'>
+      <script type="text/template" id="tab">
+        <a href="<%- href %>">
+          <%- tabName %>
+        </a>
+      </script>        
     </ul>
 
   </body>

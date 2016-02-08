@@ -1,15 +1,22 @@
 define([
   'jquery',
   'marionette',
+  'backbone',
   'TabItemView'
-], function($, Marionette, TabItemView) {
+], function($, Marionette, Backbone, TabItemView) {
   var TabCollectionView = Marionette.CollectionView.extend({
-    el: '.tabs',
+    el: '#tabs',
     childView: TabItemView,
     events: {
       'click a': 'activateHandler'
     },
     initialize: function(options) {
+      var tabCollection,
+          tabs = [
+            { href: 'mypage',  tabName: 'マイページ' },
+            { href: 'account', tabName: 'アカウント編集' }
+          ];
+      this.collection = new Backbone.Collection(tabs);
     },
     activateHandler: function(event){
       // ページ内リンク無効化処理を以下で実施
