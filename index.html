@@ -5,12 +5,24 @@
   </head>
   <body>
     <h3>メイン領域</h3>
+    <div id='mainArea'>
+      <div id="main-header">
+      </div>      
+    </div>
     <script type='text/template' id='main-view-template'>
       <h4>詳細情報</h4>
-      <div id="main-header"></div>
-      <div id="main-contents">コンテンツ表示</div>
+      <div id="main-contents">コンテンツを表示</div>
     </script>
 
+    <script type='text/template' id='main-header-template'>
+      <h4>ヘッダー領域です</h4>
+      <ul>
+        <li><%- name %></li>
+        <li><%- title %></li>        
+      </ul>
+
+    </script>
+    
     <h3>JSON読み込みサンプル</h3>
     <section id='main'>
       <button id='userLibrary'>読み込み開始</button>
