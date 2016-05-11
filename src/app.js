@@ -17,7 +17,8 @@ requirejs.config({
     MainHeaderItemView: 'item_views/mainHeaderItemView',
     HeaderView: 'item_views/headerView',
     MainLayoutView: 'layout_views/mainLayoutView',
-    UserController: 'controller/user'
+    UserController: 'controller/user',
+    Router: 'routers/route'
   }
 });
 requirejs(['userLibrary', 'main']);
