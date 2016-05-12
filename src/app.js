@@ -4,6 +4,7 @@ requirejs.config({
     underscore: '../node_modules/underscore/underscore-min',
     backbone: '../node_modules/backbone/backbone',
     marionette: '../node_modules/backbone.marionette/lib/backbone.marionette',
+    bootstrap: '../node_modules/bootstrap/dist/js/bootstrap.min',
     userLibrary: 'userLibrary',
     UserLibraryView: 'view/userLibrary',
     UserLibraryModel: 'model/userLibrary',
@@ -17,7 +18,13 @@ requirejs.config({
     MainHeaderItemView: 'item_views/mainHeaderItemView',
     HeaderView: 'item_views/headerView',
     MainLayoutView: 'layout_views/mainLayoutView',
-    UserController: 'controller/user'
+    UserController: 'controller/user',
+    Router: 'routers/route'
+  },
+  shim: {
+    bootstrap: {
+      deps: ['jquery']      
+    }
   }
 });
 requirejs(['userLibrary', 'main']);
