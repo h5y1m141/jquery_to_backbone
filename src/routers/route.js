@@ -4,10 +4,10 @@ define([
   'bootstrap'
 ], function(Backbone, Marionette, bootstrap) {
   var MyAppController = Marionette.Object.extend({
-		initialize: function () {
+    initialize: function () {
       mixpanel.track('initialize');
-			console.log('initialize');
-		},
+      console.log('initialize');
+    },
     save: function(){
       mixpanel.track('save');
       console.log('save');
